@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/openimage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/openimage"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate calories"
+        android:background="#3F51B5"
+        android:textSize="18sp"
+        android:layout_centerVertical="true">
+    </Button>
+
+    <TextView
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 calories"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#F44336"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+
+    </TextView>
+
+   <ImageView
+       android:id="@+id/burger"
+       android:layout_width="125dp"
+       android:layout_height="250dp"
+       android:scaleType="centerCrop"
+       android:layout_marginLeft="6dp"
+       android:layout_marginRight="6dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/burger">
+
+   </ImageView>
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="125dp"
+        android:layout_height="250dp"
+        android:src="@drawable/pizza"
+        android:scaleType="centerCrop"
+        android:layout_toLeftOf="@id/burger"
+        android:layout_alignParentBottom="true">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/hotdog"
+        android:layout_width="125dp"
+        android:layout_height="250dp"
+        android:src="@drawable/hotdog"
+        android:scaleType="centerCrop"
+        android:layout_toRightOf="@id/burger"
+        android:layout_alignParentBottom="true">
+
+    </ImageView>
+
+
+
+
+</RelativeLayout>

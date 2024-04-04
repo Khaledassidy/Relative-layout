@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity4">
+
+<!--    alignparentstart ya3ne 3end l start 3al yamen ta3et sheshe-->
+<!--    alignparentend ya3ne 3end e5r l end ta3et sheshe 3al shmel-->
+<!--    iza 7atet  android:layout_alignParentStart="true" and android:layout_alignParentTop="true" w 2albt arabic so 7atenten2l l button 3al yamen mn fo2 -->
+    <!--iza 7atet  android:layout_alignParentEnd="true" and android:layout_alignParentTop="true" so l button 3al yamen mn fo2 w iza 2albt arabic so 7atenten2l l button 3al shmel mn fo2 -->
+
+    <ImageView
+        android:id="@+id/imageprofile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/imageprofile"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author name"
+        android:layout_below="@id/imageprofile"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/book1"
+        android:layout_centerHorizontal="true"
+        android:max="5"
+        android:numStars="5"
+        android:progress="3"
+        android:rating="3.5">
+
+    </RatingBar>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Order"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:background="#673AB7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/book1"
+        android:layout_width="125dp"
+        android:layout_height="250dp"
+        android:src="@drawable/book1"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/book2"
+        android:layout_width="125dp"
+        android:layout_height="250dp"
+        android:src="@drawable/book2"
+        android:layout_above="@id/btn"
+        android:layout_toLeftOf="@id/book1"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/book3"
+        android:layout_width="125dp"
+        android:layout_height="250dp"
+        android:src="@drawable/book3"
+        android:layout_toRightOf="@id/book1"
+        android:layout_above="@id/btn"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

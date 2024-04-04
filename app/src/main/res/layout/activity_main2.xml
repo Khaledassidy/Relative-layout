@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+<!--    relative to another view:-->
+<!--    ya3ne masln text view keef shakla bel nesme lal image view-->
+<!--    keef mna3mela hayde mnesta3mel l id ta3et l view -->
+<!--    exmple 3ande 2 text view wa7de diffult w tenye center in parent-->
+<!--    bade 5ale text 1 ta7t text2 keef: beste3mle l id b2ol la text1 layoutbelow:w ba3teha l id ta3et l text2 so 3am 2ola eno ya text1 3ode ta7t text2-->
+<!--    bas bhya tare2a saret ta7ta 3al yamen bas ana bade yeha ta7ta bel zabt so b2ola la text1 center horizantal true-->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="text1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="text2">
+
+    </TextView>
+<!--    law bade tex3 fo2 text2 b2ola la text3 above tex2 w ba3teha kamen center in horizantal true-->
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="text3">
+
+    </TextView>
+<!--    iza bade 7ot text4 3ala yamen text2 best3mel rightof:text2-->
+<!--    bas heek 7a tseer 3a yamena bas mn fo2 la 5aleha 3ala yamena bel zabr b7ot centervertical true-->
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text2"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:text="text4">
+
+    </TextView>
+
+    <!--    iza bade 7ot text5 3ala shmeel text2 best3mel leftof:text2-->
+    <!--    bas heek 7a tseer 3a shmeel bas mn fo2 la 5aleha 3ala shmeel bel zabt b7ot centervertical true-->
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/text2"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:text="text5">
+
+    </TextView>
+
+<!--    so mola5s fe 4 besta3mlehoun :
+      fo2:       android:layout_above="@id/text2"
+      ta7t:      android:layout_below="@id/text2"
+      yamnen:    android:layout_toRightOf="@id/text2"
+      shmeeel:   android:layout_toLeftOf="@id/text2"
+
+-->
+
+<!--    3ala yamen text3 centerinparent=true and leftof text2-->
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text5"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@id/text2"
+        android:text="text6" />
+
+<!--    3ala yamen text3 android:layout_centerInParent="true" and   android:layout_toRightOf="@id/text3" -->
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text5"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/text3"
+        android:text="text7"
+        android:textSize="18sp" />
+
+<!--    3ala yaemn text1  android:layout_centerInParent="true" and  android:layout_below="@id/text4" and android:layout_toRightOf="@id/text1"-->
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/text1"
+        android:text="text8"
+        android:textSize="18sp">
+
+    </TextView>
+
+<!--    3ala shmeel text1 android:layout_centerInParent="true" and  android:layout_below="@id/text5" and   android:layout_toLeftOf="@id/text1" -->
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/text1"
+        android:text="text8"
+        android:textSize="18sp">
+
+    </TextView>
+
+</RelativeLayout>
